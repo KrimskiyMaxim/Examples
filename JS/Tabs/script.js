@@ -4,7 +4,6 @@ var cont = document.getElementsByClassName('c');
 window.onload = function () {
   hide(1);
 }
-
 document.getElementById('tab').onclick = function () {
   if (event.target.className == 't') {
     for (var i = 0; i<tab.length; i++) {
