@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #e9e9e9;
+  color: #333;
+}
+body {
+  padding: 15px;
+}
+.t {
+  height: 15px;
+  width: 40px;
+  padding: 15px;
+  border: 1.5px solid #333;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.tW {
+  border-bottom: 1.5px solid #e9e9e9;
+}
+.c {
+  height: 70px;
+  width: 204px;
+  margin-top: 0px;
+  padding: 10px;
+  border: 1.5px solid #333;
+  border-top: none;
+  position: relative;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
