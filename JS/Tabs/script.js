@@ -1,29 +1,31 @@
-var t = document.getElementsByClassName('t');
-var c = document.getElementsByClassName('c');
+var tab = document.getElementsByClassName('t');
+var cont = document.getElementsByClassName('c');
+
 window.onload = function () {
   hide(1);
 }
-document.getElementById("tab").onclick = function () {
-target = event.target;
-if (target.className == "t") {
-  for (var i = 0; i<t.length; i++) {
-    if (target == t[i]) {
-      show(i);
-      console.log(i);
-      break;
+
+document.getElementById('tab').onclick = function () {
+  if (event.target.className == 't') {
+    for (var i = 0; i<tab.length; i++) {
+      if (tab[i] == event.target) {
+        show(i);
+        break;
+      }
     }
   }
 }
-}
+
 function hide(x) {
-    for (var i = x; i < c.length; i++) {
-      c[i].classList.remove('show');
-      c[i].classList.add('hide');
-      t[i].classList.remove('tW');
-    }
+  for (var i = x; i < tab.length; i++) {
+    tab[i].classList.remove('tW');
+    cont[i].classList.remove('show');
+    cont[i].classList.add('hide');
+
+  }
 }
 function show(x) {
   hide(0);
-  t[x].classList.add('tW');
-  c[x].classList.add('show');
+  cont[x].classList.add('show');
+  tab[x].classList.add('tW');
 }
