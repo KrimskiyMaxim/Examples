@@ -8,7 +8,10 @@
 <?
 	
 	$test = new queryDB;
-	echo($test->numberArticles('articles'));
+	$result = ($test->searchResult('articles', 'title', '6', false));
+	echo($result['title']);
+	echo('<br> done');
+	
 	
 ?>
 <body>
